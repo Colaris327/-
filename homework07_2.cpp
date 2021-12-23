@@ -208,7 +208,6 @@ void WriteTOFile(string name, int size, double time)
 {
     ofstream ofile;
     ofile.open("Sort_Result.txt", ios::app);
-    ofile.setf(ios_base::floatfield);
     ofile << name << " " << size << ": " << time << "s\n";
     if (name == "Stdlib qsort")
         ofile << endl;
