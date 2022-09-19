@@ -60,7 +60,7 @@ const int MAX = 1000;
 
 void Merge(std::vector<int> &Array, int front, int mid, int end)
 {
-    // + 1 is for putting infinite in sub. in order to compare
+    // + 1 is for the 
     std::vector<int> LeftSub(Array.begin() + front, Array.begin() + mid + 1); // put array[front:mid] in
     std::vector<int> RightSub(Array.begin() + mid + 1, Array.begin() + end + 1); // put array[mid+1:end] in
 
