@@ -9,7 +9,7 @@ void InsertionSort(int *arr, int size)
     {
         int key = arr[current];
         int finger = current - 1;
-        while (key < arr[finger] && finger >= 0)
+        while (finger >= 0 && key < arr[finger])
         {
             arr[finger + 1] = arr[finger];
             finger--;
